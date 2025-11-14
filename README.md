@@ -14,8 +14,9 @@ A WebSocket endpoint called "/ws" that emits streaming metric events (JSON) ever
 
 A static-file handler to serve the frontend.
 
-## The frontend 🌸
+## The frontend 📊🌸 
 A React frontend that connects to the WebSocket, receives metric events, and renders them in an updating chart.
+Link => WIP (@TODO)
 
 ## Topics covered
 
