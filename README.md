@@ -10,7 +10,7 @@ What does this app do?
 ## The backend 😎
 The backend of this application is built in Rust backend (Axum + Tokio) and it exposes:
 
-A WebSocket endpoint called "/ws" that emits streaming metric events (JSON) every 1s (configurable).
+A WebSocket endpoint called "/ws" that emits streaming metric events (JSON) every 1s.
 
 A static-file handler to serve the frontend.
 
@@ -49,3 +49,27 @@ Link => WIP (@TODO)
 - Observability: tracing, metrics, Prometheus exporter.
 
 - Benchmark & optimize: CPU/latency tests, per-message serialization formats (CBOR vs JSON).
+
+## Run the app
+
+## Backend
+
+Simple as this:
+
+```
+cargo run
+```
+To send the requests open another terminal, you would need wscat 🐱 installed, 
+if you don't have it you can install it like this:
+
+```
+npm i wscat
+```
+
+After this just run on another terminal:
+
+```
+wscat -c ws://127.0.0.1:3000/ws
+```
+
+## Frontend (WIP @TODO)
