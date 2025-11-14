@@ -72,4 +72,8 @@ After this just run on another terminal:
 wscat -c ws://127.0.0.1:3000/ws
 ```
 
+You would see something pretty cool like this:
+
+![alt text](<Captura desde 2025-11-14 21-22-40.png>)
+
 ## Frontend (WIP @TODO)
