@@ -1,7 +1,6 @@
 # Real-time Streaming Dashboard
 
-A Real-time Streaming Dashboard (Rust backend streaming metrics over WebSockets + React frontend displaying live charts).
-
+A Real-time Streaming Dashboard (Rust backend streaming CPU metrics over WebSockets + React frontend displaying live charts).
 
 ## Quick overview
 
@@ -15,8 +14,8 @@ A WebSocket endpoint called "/ws" that emits streaming metric events (JSON) ever
 A static-file handler to serve the frontend.
 
 ## The frontend 📊🌸 
-A React frontend that connects to the WebSocket, receives metric events, and renders them in an updating chart.
-Link => WIP (@TODO)
+A React frontend that connects to the WebSocket, receives the CPU metric events, and renders them in an updating chart.
+Find the repo [here](https://github.com/jchavezlavalle/rt-dashboard-frontend).
 
 ## Topics covered
 
@@ -28,7 +27,7 @@ Link => WIP (@TODO)
 
 - Backend: Rust, axum, tokio, serde, tracing (optional).
 
-- Frontend: React (Vite), TypeScript (optional), Chart.js or lightweight visualization.
+- Frontend: React, Vite, TypeScript.
 
 - Communication: WebSockets (JSON messages).
 
@@ -54,7 +53,7 @@ Link => WIP (@TODO)
 
 ## Backend
 
-Simple as this:
+Run the following script:
 
 ```
 cargo run
@@ -76,4 +75,6 @@ You would see something pretty cool like this:
 
 ![alt text](<Captura desde 2025-11-14 21-22-40.png>)
 
-## Frontend (WIP @TODO)
+## Frontend 
+
+Find it here -> [https://github.com/jchavezlavalle/rt-dashboard-frontend](https://github.com/jchavezlavalle/rt-dashboard-frontend)
