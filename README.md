@@ -1,4 +1,4 @@
-# Real-time Streaming Dashboard — Plan & Starter Code
+# Real-time Streaming Dashboard
 
 A Real-time Streaming Dashboard (Rust backend streaming metrics over WebSockets + React frontend displaying live charts).
 
