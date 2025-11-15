@@ -26,7 +26,7 @@ A static-file handler to serve the frontend.
 Frontend? find it here -> [https://github.com/jchavezlavalle/rt-dashboard-frontend](https://github.com/jchavezlavalle/rt-dashboard-frontend) aaaand...
 
 This is a sneak-peak of what the frontend looks like:
-![Kawaii UI](<./src/assets/Captura desde 2025-11-15 18-23-52.png'>)
+![Kawaii UI](<./src/assets/Captura desde 2025-11-15 18-23-52.png>)
 
 # Roadmap 
 
