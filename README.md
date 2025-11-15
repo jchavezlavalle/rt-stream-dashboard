@@ -31,7 +31,7 @@ Find the repo [here](https://github.com/jchavezlavalle/rt-dashboard-frontend).
 
 - Communication: WebSockets (JSON messages).
 
-![alt text](<Captura desde 2025-11-14 20-33-45.png>)
+![alt text](<./src/assets/Captura desde 2025-11-14 20-33-45.png>)
 
 ## Roadmap 
 
@@ -73,8 +73,11 @@ wscat -c ws://127.0.0.1:3000/ws
 
 You would see something pretty cool like this:
 
-![alt text](<Captura desde 2025-11-14 21-22-40.png>)
+![logs from wscat](<./src/assets/Captura desde 2025-11-14 21-22-40.png>)
 
 ## Frontend 
 
 Find it here -> [https://github.com/jchavezlavalle/rt-dashboard-frontend](https://github.com/jchavezlavalle/rt-dashboard-frontend)
+
+This is a sneak-peak of what the frontend looks like:
+![Kawaii UI](<./src/assets/Captura desde 2025-11-15 18-23-52.png'>)
