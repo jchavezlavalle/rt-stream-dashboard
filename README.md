@@ -1,13 +1,12 @@
 # Real-time Streaming Dashboard
 
-A Real-time Streaming Dashboard built with Rust, which streams CPU metrics over (WebSockets)[https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API] + [React](https://github.com/facebook/react) frontend displaying live charts.
+A Real-time Streaming Dashboard built with Rust, which streams CPU/memory metrics over [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) + [React](https://github.com/facebook/react) frontend displaying live charts.
 
 # 🧠 What is rt-stream-dashboard?
 
 rt-stream-dashboard sends CPU/memory metrics through websockets using Rust. It uses ([Axum](https://github.com/tokio-rs/axum) + [Tokio](https://github.com/tokio-rs/tokio)) and it exposes:
 
 A WebSocket endpoint called "/ws" that emits streaming metric events ( in JSON format ) every 1s.
-
 A static-file handler to serve the frontend.
 
 # ✨ Highlights 
