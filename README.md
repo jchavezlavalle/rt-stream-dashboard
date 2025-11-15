@@ -26,13 +26,17 @@ A static-file handler to serve the frontend.
 
 # Roadmap 
 
-- Rust server that sends simulated metrics + React client charts.
-- Authentication (token on WS handshake).
-- Persistent ingestion: write metrics to SQLite or Append-only log.
-- Backpressure & rate limiting.
-- Multiple topics/rooms (e.g., per-host streams) and filtering.
-- Observability: tracing, metrics, Prometheus exporter.
-- Benchmark & optimize: CPU/latency tests.
+# First version
+- :crab: Rust server that sends simulated metrics + React client charts.
+
+# Future work
+
+- 🔑 Authentication (token on WS handshake).
+- ✍️ Persistent ingestion: write metrics to SQLite or Append-only log.
+- ♾️ Backpressure & rate limiting.
+- 🚪 Multiple topics/rooms (e.g., per-host streams) and filtering.
+- 👀 Improvements on observability: tracing, metrics, Prometheus exporter.
+- 📈 Benchmark & optimize: CPU/latency tests.
 
 # Usage
 
