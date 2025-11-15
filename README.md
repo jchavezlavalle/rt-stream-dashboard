@@ -1,71 +1,54 @@
 # Real-time Streaming Dashboard
 
-A Real-time Streaming Dashboard (Rust backend streaming CPU metrics over WebSockets + React frontend displaying live charts).
+A Real-time Streaming Dashboard built with Rust, which streams CPU metrics over (WebSockets)[https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API] + [React](https://github.com/facebook/react) frontend displaying live charts.
 
-## Quick overview
+# 🧠 What is rt-stream-dashboard?
 
-What does this app do?
+rt-stream-dashboard sends CPU/memory metrics through websockets using Rust. It uses ([Axum](https://github.com/tokio-rs/axum) + [Tokio](https://github.com/tokio-rs/tokio)) and it exposes:
 
-## The backend 😎
-The backend of this application is built in Rust backend (Axum + Tokio) and it exposes:
-
-A WebSocket endpoint called "/ws" that emits streaming metric events (JSON) every 1s.
+A WebSocket endpoint called "/ws" that emits streaming metric events ( in JSON format ) every 1s.
 
 A static-file handler to serve the frontend.
 
-## The frontend 📊🌸 
-A React frontend that connects to the WebSocket, receives the CPU metric events, and renders them in an updating chart.
-Find the repo [here](https://github.com/jchavezlavalle/rt-dashboard-frontend).
+# ✨ Highlights 
+- **💬 Async programming:** WebSocket handling.
+- **⚡ Fast:** Made in Rust :crab: for performance.
+- **👀 Basic observability:** Allows to manage and examine the state of logs, metrics and traces over time.
+- **🗒️ Machine-parsable serialization:** Serialization with the (serde)[https://github.com/serde-rs/serde] library in JSON format, allowing a simpler data exchange.
+- **🎨 Interactive UI:** Integration of a modern frontend with real-time streaming and reactive UI. React frontend that connects to the WebSocket, receives the CPU metric events, and renders them in an updating chart. See the repo [here](https://github.com/jchavezlavalle/rt-dashboard-frontend).
 
-## Topics covered
-
-- Rust async programming, WebSocket handling, serialization with serde library, and basic observability.
-
-- Integration of a modern frontend with real-time streaming and reactive UI.
-
-## Tech stack
-
-- Backend: Rust, axum, tokio, serde, tracing (optional).
-
-- Frontend: React, Vite, TypeScript.
-
-- Communication: WebSockets (JSON messages).
+# Tech stack
+- 😎 Backend: Rust, axum, tokio, serde, tracing (optional).
+- 📊🌸 Frontend: React, Vite, TypeScript.
+- 🦜💬 Communication: WebSockets (JSON messages).
 
 ![alt text](<Captura desde 2025-11-14 20-33-45.png>)
 
-## Roadmap 
+# Roadmap 
 
-- Rust server that sends simulated metrics + React client charts. 
-
+- Rust server that sends simulated metrics + React client charts.
 - Authentication (token on WS handshake).
-
 - Persistent ingestion: write metrics to SQLite or Append-only log.
-
 - Backpressure & rate limiting.
-
 - Multiple topics/rooms (e.g., per-host streams) and filtering.
-
 - Observability: tracing, metrics, Prometheus exporter.
+- Benchmark & optimize: CPU/latency tests.
 
-- Benchmark & optimize: CPU/latency tests, per-message serialization formats (CBOR vs JSON).
+# Usage
 
-## Run the app
-
-## Backend
-
-Run the following script:
+## Running the Application
 
 ```
 cargo run
 ```
-To send the requests open another terminal, you would need wscat 🐱 installed, 
-if you don't have it you can install it like this:
+## Send requests using wscat 🐱
 
+Make sure to have it installed first, otherwise run the following command:
 ```
 npm i wscat
 ```
 
-After this just run on another terminal:
+After this run on another terminal wscat:
 
 ```
 wscat -c ws://127.0.0.1:3000/ws
@@ -75,6 +58,11 @@ You would see something pretty cool like this:
 
 ![alt text](<Captura desde 2025-11-14 21-22-40.png>)
 
-## Frontend 
+# 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Find it here -> [https://github.com/jchavezlavalle/rt-dashboard-frontend](https://github.com/jchavezlavalle/rt-dashboard-frontend)
+# 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+# 📧 Contact
+Created by jchavezlavalle
